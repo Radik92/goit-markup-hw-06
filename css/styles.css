@@ -937,6 +937,7 @@ button {
 .form-label {
   display: block;
   margin-bottom: 4px;
+
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.04em;
@@ -954,17 +955,34 @@ button {
   height: 40px;
   padding: 0;
   padding-left: 38px;
+
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
+
   transition: border var(--transition-dur-and-func);
 }
+
+.form-field:focus {
+  border: 1px solid rgba(77, 90, 229, 1);
+  outline: none;
+}
+
+.form-field:focus + .form-icon {
+  fill: var(--cta-color);
+}
+
 .form-icon {
   position: absolute;
   top: 50%;
   left: 16px;
   transform: translateY(-50%);
+
   transition: fill var(--transition-dur-and-func);
   pointer-events: none;
+}
+
+.form-field:focus + .form-icon {
+  fill: var(--cta-color);
 }
 
 .form-comment {
@@ -973,13 +991,21 @@ button {
   height: 120px;
   padding: 8px 16px;
   margin-bottom: 16px;
+
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
+
   transition: border var(--transition-dur-and-func);
+
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
+}
+
+.form-comment:focus {
+  border: 1px solid rgba(77, 90, 229, 1);
+  outline: none;
 }
 
 .form-agreement {
