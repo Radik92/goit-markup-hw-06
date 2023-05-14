@@ -880,6 +880,7 @@ button {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   min-height: 576px;
+  padding: 30px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -925,6 +926,18 @@ button {
 .modal-close-icon {
   fill: currentColor;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal_title {
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 6px;
 }
 
 /*  */
