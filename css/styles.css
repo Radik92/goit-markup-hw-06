@@ -1110,6 +1110,11 @@ button {
   transition: var(--transition-dur-and-func);
 }
 
+.check-icon:focus {
+  border: 1px solid rgba(77, 90, 229, 1);
+  outline: none;
+}
+
 .form-check-input:checked + .check-icon > .unchecked {
   opacity: 0;
 }
