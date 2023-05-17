@@ -858,6 +858,9 @@ button {
 
 /* footer-subcscribe */
 
+.footer-subcscribe {
+}
+
 .footer-form-title {
   display: block;
   margin-bottom: 16px;
@@ -872,11 +875,11 @@ button {
 .footer-form {
   display: flex;
   align-items: flex-end;
+  gap: 24px;
 }
 .footer-form-field {
   background-color: transparent;
 
-  margin-right: 24px;
   width: 264px;
   height: 40px;
   padding: 8px 16px;
@@ -1110,7 +1113,7 @@ button {
   transition: var(--transition-dur-and-func);
 }
 
-.check-icon:focus {
+.check:focus {
   border: 1px solid rgba(77, 90, 229, 1);
   outline: none;
 }
