@@ -1113,9 +1113,9 @@ button {
   transition: var(--transition-dur-and-func);
 }
 
-.check:focus {
+.form-check-input:focus-visible {
   border: 1px solid rgba(77, 90, 229, 1);
-  outline: none;
+  outline-color: none;
 }
 
 .form-check-input:checked + .check-icon > .unchecked {
